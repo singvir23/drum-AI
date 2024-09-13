@@ -1,5 +1,10 @@
 {
   "dependencies": {
     "opensheetmusicdisplay": "^1.8.9"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo 'No build script defined'",
+    "test": "echo 'Error: no test specified' && exit 1"
   }
 }
