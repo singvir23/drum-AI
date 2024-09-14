@@ -24,10 +24,10 @@
       </attributes>
       <note>
         <grace slash="yes"/>
-        <pitch>
-          <step>C</step>
-          <octave>5</octave>
-        </pitch>
+        <unpitched>
+          <display-step>C</display-step>
+          <display-octave>5</display-octave>
+        </unpitched>
         <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
@@ -38,10 +38,10 @@
         </lyric>
       </note>
       <note>
-        <pitch>
-          <step>C</step>
-          <octave>5</octave>
-        </pitch>
+        <unpitched>
+          <display-step>C</display-step>
+          <display-octave>5</display-octave>
+        </unpitched>
         <duration>2</duration>
         <voice>1</voice>
         <type>eighth</type>
@@ -54,10 +54,10 @@
       </note>
       <note>
         <grace slash="yes"/>
-        <pitch>
-          <step>C</step>
-          <octave>5</octave>
-        </pitch>
+        <unpitched>
+          <display-step>C</display-step>
+          <display-octave>5</display-octave>
+        </unpitched>
         <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
@@ -68,10 +68,10 @@
         </lyric>
       </note>
       <note>
-        <pitch>
-          <step>C</step>
-          <octave>5</octave>
-        </pitch>
+        <unpitched>
+          <display-step>C</display-step>
+          <display-octave>5</display-octave>
+        </unpitched>
         <duration>2</duration>
         <voice>1</voice>
         <type>eighth</type>
@@ -84,10 +84,10 @@
       </note>
       <note>
         <grace slash="yes"/>
-        <pitch>
-          <step>C</step>
-          <octave>5</octave>
-        </pitch>
+        <unpitched>
+          <display-step>C</display-step>
+          <display-octave>5</display-octave>
+        </unpitched>
         <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
@@ -98,10 +98,10 @@
         </lyric>
       </note>
       <note>
-        <pitch>
-          <step>C</step>
-          <octave>5</octave>
-        </pitch>
+        <unpitched>
+          <display-step>C</display-step>
+          <display-octave>5</display-octave>
+        </unpitched>
         <duration>2</duration>
         <voice>1</voice>
         <type>eighth</type>
@@ -114,10 +114,10 @@
       </note>
       <note>
         <grace slash="yes"/>
-        <pitch>
-          <step>C</step>
-          <octave>5</octave>
-        </pitch>
+        <unpitched>
+          <display-step>C</display-step>
+          <display-octave>5</display-octave>
+        </unpitched>
         <duration>1</duration>
         <voice>1</voice>
         <type>eighth</type>
@@ -128,10 +128,10 @@
         </lyric>
       </note>
       <note>
-        <pitch>
-          <step>C</step>
-          <octave>5</octave>
-        </pitch>
+        <unpitched>
+          <display-step>C</display-step>
+          <display-octave>5</display-octave>
+        </unpitched>
         <duration>2</duration>
         <voice>1</voice>
         <type>eighth</type>
