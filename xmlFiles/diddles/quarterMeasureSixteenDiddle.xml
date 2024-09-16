@@ -9,7 +9,7 @@
   <part id="P1">
     <measure number="1">
       <attributes>
-        <divisions>2</divisions>
+        <divisions>4</divisions>
         <key>
           <fifths>0</fifths>
         </key>
@@ -29,14 +29,13 @@
         </unpitched>
         <duration>1</duration>
         <voice>1</voice>
-        <type>8th</type>
-         <beam number="1">begin</beam>
-        <instrument id="P1-I1"/>
+        <type>16th</type>
+        <beam number="1">begin</beam>
         <stem>up</stem>
-        <lyric number="1" default-x="6.58" default-y="-40.00" relative-y="-30.00">
+        <lyric number="1">
           <syllabic>single</syllabic>
           <text>R</text>
-          </lyric>
+        </lyric>
         <notations>
           <ornaments>
             <tremolo type="single">1</tremolo>
@@ -50,14 +49,53 @@
         </unpitched>
         <duration>1</duration>
         <voice>1</voice>
-        <type>8th</type>
-        <instrument id="P1-I1"/>
-        <beam number="1">end</beam>
+        <type>16th</type>
+        <beam number="1">continue</beam>
         <stem>up</stem>
-        <lyric number="1" default-x="6.58" default-y="-40.00" relative-y="-30.00">
+        <lyric number="1">
           <syllabic>single</syllabic>
           <text>L</text>
-          </lyric>
+        </lyric>
+        <notations>
+          <ornaments>
+            <tremolo type="single">1</tremolo>
+            </ornaments>
+          </notations>
+      </note>
+      <note>
+        <unpitched>
+          <display-step>C</display-step>
+          <display-octave>5</display-octave>
+        </unpitched>
+        <duration>1</duration>
+        <voice>1</voice>
+        <type>16th</type>
+        <beam number="1">continue</beam>
+        <stem>up</stem>
+        <lyric number="1">
+          <syllabic>single</syllabic>
+          <text>R</text>
+        </lyric>
+        <notations>
+          <ornaments>
+            <tremolo type="single">1</tremolo>
+            </ornaments>
+          </notations>
+      </note>
+      <note>
+        <unpitched>
+          <display-step>C</display-step>
+          <display-octave>5</display-octave>
+        </unpitched>
+        <duration>1</duration>
+        <voice>1</voice>
+        <type>16th</type>
+        <beam number="1">end</beam>
+        <stem>up</stem>
+        <lyric number="1">
+          <syllabic>single</syllabic>
+          <text>L</text>
+        </lyric>
         <notations>
           <ornaments>
             <tremolo type="single">1</tremolo>
@@ -66,19 +104,19 @@
       </note>
       <note>
         <rest/>
-        <duration>1</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <note>
         <rest/>
-        <duration>1</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
       <note>
         <rest/>
-        <duration>1</duration>
+        <duration>2</duration>
         <voice>1</voice>
         <type>quarter</type>
       </note>
