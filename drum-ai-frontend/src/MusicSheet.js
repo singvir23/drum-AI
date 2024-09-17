@@ -18,7 +18,7 @@ const MusicSheet = () => {
       if (data.xml) {
         const osmd = new OpenSheetMusicDisplay(osmdRef.current, {
           autoResize: true,
-          drawTitle: true,
+          drawTitle: false,
         });
         await osmd.load(data.xml);
         osmd.render();
@@ -32,17 +32,17 @@ const MusicSheet = () => {
 
   return (
     <div>
-      <input 
-        type="text" 
-        value={prompt} 
-        onChange={(e) => setPrompt(e.target.value)} 
-        placeholder="Enter a music prompt..." 
-        style={{ margin: '20px', width: '60%' }}
+      <input
+        type="text"
+        value={prompt}
+        onChange={(e) => setPrompt(e.target.value)}
+        placeholder="Enter a music prompt..."
       />
-      <button onClick={handleGenerateMusic} disabled={loading} style={{ margin: '10px' }}>
+      <button onClick={handleGenerateMusic} disabled={loading}>
         {loading ? "Generating..." : "Generate Music"}
       </button>
-      <div ref={osmdRef} style={{ width: '100%', height: 'auto', backgroundColor: '#f5f5dc' }}></div>
+      {loading && <div className="loading-spinner"></div>}
+      <div ref={osmdRef} className="osmd-container"></div>
     </div>
   );
 };

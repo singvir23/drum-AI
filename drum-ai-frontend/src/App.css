@@ -1,6 +1,16 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #e0f7ff, #f0e5ff, #ffebf8); /* Soft gradient from blue to purple to pink */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color:transparent; /* White background for the content */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,7 +21,87 @@
 }
 
 .App-header {
-  background-color: #f5f5dc; /* Crème color for the header only */
+  background-color: transparent; /* Keep the white background for header */
   width: 100%;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  color: #333333;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  padding: 15px;
+  font-size: 1rem;
+  width: 60%;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #80d0ff, #b19cd9, #ffc0cb); /* Gradient for button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 180px;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  transform: scale(1.05); /* Slight expansion on hover */
+}
+
+.loading-spinner {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #007bff;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.osmd-container {
+
+  background-color:transparent;
+  border-radius: 8px;
   padding: 20px;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;  /* Ensures centering of OSMD content */
+  align-items: center;
+  padding-right: 300px;
+  padding-left: 250px;
 }
