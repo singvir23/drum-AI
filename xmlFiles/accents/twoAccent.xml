@@ -33,7 +33,7 @@
          <beam number="1">begin</beam>
         <instrument id="P1-I1"/>
         <stem>up</stem>
-        <lyric number="1">
+        <lyric number="1" default-x="6.58" default-y="-40.00" relative-y="-30.00">
           <syllabic>single</syllabic>
           <text>R</text>
           </lyric>
@@ -49,7 +49,7 @@
         <instrument id="P1-I1"/>
         <beam number="1">continue</beam>
         <stem>up</stem>
-        <lyric number="1">
+        <lyric number="1" default-x="6.58" default-y="-40.00" relative-y="-30.00">
           <syllabic>single</syllabic>
           <text>L</text>
           </lyric>
@@ -65,10 +65,15 @@
         <instrument id="P1-I1"/>
         <beam number="1">continue</beam>
         <stem>up</stem>
-        <lyric number="1">
+        <lyric number="1" default-x="6.58" default-y="-40.00" relative-y="-30.00">
           <syllabic>single</syllabic>
           <text>R</text>
           </lyric>
+         <notations>
+          <articulations>
+            <accent/>
+            </articulations>
+          </notations>
       </note>
       <note>
         <unpitched>
@@ -81,7 +86,7 @@
         <instrument id="P1-I1"/>
         <beam number="1">end</beam>
         <stem>up</stem>
-        <lyric number="1">
+        <lyric number="1" default-x="6.58" default-y="-40.00" relative-y="-30.00">
           <syllabic>single</syllabic>
           <text>L</text>
           </lyric>
@@ -97,7 +102,39 @@
         <instrument id="P1-I1"/>
         <beam number="1">begin</beam>
         <stem>up</stem>
-        <lyric number="1">
+        <lyric number="1" default-x="6.58" default-y="-40.00" relative-y="-30.00">
+          <syllabic>single</syllabic>
+          <text>R</text>
+          </lyric>
+      </note>
+      <note>
+        <unpitched>
+          <display-step>C</display-step>
+          <display-octave>5</display-octave>
+        </unpitched>
+        <duration>1</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <instrument id="P1-I1"/>
+        <beam number="1">continue</beam>
+        <stem>up</stem>
+        <lyric number="1" default-x="6.58" default-y="-40.00" relative-y="-30.00">
+          <syllabic>single</syllabic>
+          <text>L</text>
+          </lyric>
+      </note>
+      <note>
+        <unpitched>
+          <display-step>C</display-step>
+          <display-octave>5</display-octave>
+        </unpitched>
+        <duration>1</duration>
+        <voice>1</voice>
+        <type>eighth</type>
+        <instrument id="P1-I1"/>
+        <beam number="1">continue</beam>
+        <stem>up</stem>
+        <lyric number="1" default-x="6.58" default-y="-40.00" relative-y="-30.00">
           <syllabic>single</syllabic>
           <text>R</text>
           </lyric>
@@ -113,16 +150,10 @@
         <instrument id="P1-I1"/>
         <beam number="1">end</beam>
         <stem>up</stem>
-        <lyric number="1">
+        <lyric number="1" default-x="6.58" default-y="-40.00" relative-y="-30.00">
           <syllabic>single</syllabic>
           <text>L</text>
           </lyric>
-      </note>
-      <note>
-        <rest/>
-        <duration>1</duration>
-        <voice>1</voice>
-        <type>quarter</type>
       </note>
     </measure>
   </part>

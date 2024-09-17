@@ -29,7 +29,7 @@
         </unpitched>
         <duration>1</duration>
         <voice>1</voice>
-        <type>8th</type>
+        <type>eighth</type>
          <beam number="1">begin</beam>
         <instrument id="P1-I1"/>
         <stem>up</stem>
@@ -45,7 +45,7 @@
         </unpitched>
         <duration>1</duration>
         <voice>1</voice>
-        <type>8th</type>
+        <type>eighth</type>
         <instrument id="P1-I1"/>
         <beam number="1">end</beam>
         <stem>up</stem>
