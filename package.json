@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "openai": "^4.61.1",
     "opensheetmusicdisplay": "^1.8.9"
   },
   "scripts": {
