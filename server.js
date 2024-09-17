@@ -16,9 +16,8 @@ app.post("/generate-xml", async (req, res) => {
   const { prompt } = req.body;
 
   try {
-    // Call the fine-tuned GPT model with the user prompt
     const completion = await openai.chat.completions.create({
-      model: "ft:gpt-4o-2024-08-06:personal::A8KaeVnK",  // Replace with your fine-tuned model name
+      model: "ft:gpt-4o-2024-08-06:personal::A8KaeVnK", 
       messages: [
         { role: "system", content: "You are a helpful assistant who generates MusicXML code. Only return valid MusicXML." },
         { role: "user", content: prompt + ". Provide this prompt in musicxml code for the snare drum" },

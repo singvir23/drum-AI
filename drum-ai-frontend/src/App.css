@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(135deg, #e0f7ff, #f0e5ff, #ffebf8); /* Soft gradient from blue to purple to pink */
+  background: linear-gradient(135deg, #e0f7ff, #f0e5ff, #ffebf8); 
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -10,7 +10,7 @@ body {
 
 .App {
   text-align: center;
-  background-color:transparent; /* White background for the content */
+  background-color:transparent; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,7 @@ body {
 }
 
 .App-header {
-  background-color: transparent; /* Keep the white background for header */
+  background-color: transparent; 
   width: 100%;
   padding: 40px;
   border-radius: 8px;
@@ -52,7 +52,7 @@ input[type="text"]:focus {
 
 button {
   padding: 12px 20px;
-  background: linear-gradient(135deg, #80d0ff, #b19cd9, #ffc0cb); /* Gradient for button */
+  background: linear-gradient(135deg, #80d0ff, #b19cd9, #ffc0cb); 
   color: white;
   border: none;
   border-radius: 5px;
@@ -100,7 +100,7 @@ button:hover:not(:disabled) {
   margin-top: 20px;
   max-width: 800px;
   display: flex;
-  justify-content: center;  /* Ensures centering of OSMD content */
+  justify-content: center; 
   align-items: center;
   padding-right: 300px;
   padding-left: 250px;

@@ -15,13 +15,11 @@ def read_musicxml(file_path):
         print(f"An error occurred while reading {file_path}: {e}")
         return None
 
-# Function to read descriptions.txt and create a dictionary
 def read_baseline_descriptions(description_file_path):
     try:
         descriptions = {}
         with open(description_file_path, 'r', encoding='utf-8') as f:
             for line in f:
-                # Expecting format: filename = description
                 if "=" in line:
                     filename, desc = line.split("=", 1)
                     descriptions[filename.strip()] = desc.strip()
@@ -39,20 +37,18 @@ def generate_descriptions(xml_content, baseline_description):
     try:
         descriptions = []
         for i in range(5):
-            # Adjust the prompt based on the required specificity
             specificity = ["ultra-specific", "very specific", "specific", "general", "generic"][i]
             if baseline_description:
                 prompt = f"Based on this baseline description: '{baseline_description}', provide a {specificity} description of the following MusicXML content:\n{xml_content}"
             else:
                 prompt = f"Provide a {specificity} description of the following MusicXML content:\n{xml_content}"
 
-            # Use the OpenAI API to get the description
             stream = client.chat.completions.create(
-                model="gpt-4o",  # Adjust the model based on your need
+                model="gpt-4o", 
                 messages=[
                     {"role": "user", "content": prompt}
                 ],
-                stream=True,  # Enable streaming
+                stream=True,  
             )
 
             description = ""
@@ -63,7 +59,7 @@ def generate_descriptions(xml_content, baseline_description):
             descriptions.append(description.strip())
             print(f"Generated {specificity} description: {description.strip()}")
             
-            time.sleep(1)  # Delay to avoid rate limiting
+            time.sleep(1)  
 
         return descriptions
     except client.error.RateLimitError as e:
@@ -72,7 +68,7 @@ def generate_descriptions(xml_content, baseline_description):
     except client.error.APIError as e:
         print(f"API error: {e}")
         return []
-    except client.OpenAIError as e:  # Use OpenAIError for general API issues
+    except client.OpenAIError as e: 
         print(f"An OpenAI API error occurred: {e}")
         return []
     except Exception as e:
@@ -99,9 +95,8 @@ def process_all_xml_files(xml_root_path, output_path, description_file_path):
     generates descriptions, and appends them to the JSONL file.
     """
     print(f"Starting to process XML files in {xml_root_path}")
-    file_count = 0  # Track how many files are processed
+    file_count = 0  
 
-    # Load baseline descriptions
     baseline_descriptions = read_baseline_descriptions(description_file_path)
 
     for root, dirs, files in os.walk(xml_root_path):
@@ -115,7 +110,6 @@ def process_all_xml_files(xml_root_path, output_path, description_file_path):
                     print(f"Failed to read {file_path}")
                     continue
 
-                # Retrieve baseline description for the current file, if it exists
                 baseline_description = baseline_descriptions.get(file, None)
 
                 descriptions = generate_descriptions(xml_content, baseline_description)
@@ -124,7 +118,6 @@ def process_all_xml_files(xml_root_path, output_path, description_file_path):
                     continue
                 print(f"Generated {len(descriptions)} descriptions for {file}")
                 
-                # Create the data in the required format
                 for description in descriptions:
                     record = {
                         "messages": [
@@ -163,6 +156,5 @@ if __name__ == "__main__":
     description_file_path = '/Users/viraajsingh/Desktop/drum-AI/xmlFiles/descriptions.txt'
     output_path = os.path.join(xml_root_path, 'allData.jsonl')
 
-    # Process all XML files
     process_all_xml_files(xml_root_path, output_path, description_file_path)
     print("Script completed successfully.")
